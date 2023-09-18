@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.registerFrom{
+    width: 900px;
+    margin: 0px auto;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top: 80px;
+}
+.registerFrom--heading{
+    text-align: center;
+    padding: 20px 0px;
+}
+.registerFromInput{
+    background-color: #faedd6;
+    padding: 20px 16px;
+}
+.registerFrom__items{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 16px;
+}
+.registerFrom__items input {
+    height: 32px;
+    border: none;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+}
+.registerFrom--submit input{
+    width: 100px;
+    height: 36px;
+    border: none;
+    border-radius: 3px;
+    background-color: #0087bd;
+    color: #fff;
+}

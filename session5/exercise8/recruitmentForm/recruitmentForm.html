@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuyển Dụng</title>
+    <link rel="stylesheet" href="./recruitmentForm.css">
+</head>
+<body>
+    <div class="recruitmentForm">
+        <h2 class="recruitmentForm--heading">Employment Application</h2>
+        <form action="post">
+            <div class="recruitmentForm--name recruitmentForm__items">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div class="recruitmentForm--email recruitmentForm__items">
+                <label for="mail">Email</label>
+                <input type="email" name="email" id="mail">
+            </div>
+            <div class="recruitmentForm--phone recruitmentForm__items">
+                <label for="phone">Phone Number</label>
+                <input type="tel" name="phone" id="phone">
+            </div>
+            <div class="recruitmentForm--cv recruitmentForm__items">
+                <label for="cv">CV</label>
+                <input type="file" name="cv" id="cv">
+            </div>
+            <div class="recruitmentForm--message recruitmentForm__items">
+                <label for="message">Message</label>
+                <textarea name="" id="message" cols="30" rows="5"></textarea>
+            </div>
+            <div class="recruitmentForm--send recruitmentForm__items">
+                <input type="submit" value="Send">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

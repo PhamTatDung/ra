@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Search</title>
+    <link rel="stylesheet" href="./hotelSearch.css">
+</head>
+<body>
+    <header>
+        <div class="logo__web--name">
+            <h1>Hotel Search</h1>
+        </div>
+        <nav class="hearder__nav--right">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="formSearch">
+            <div class="formSearch__header">
+                <h3>Find The Perfect Hotel For You</h3>
+            </div>
+            <div class="formSearch__info">
+                <div class="formSearch__info--description formSearch__info--items">
+                    <label for="description">
+                        Description
+                    </label>
+                    <input type="text" name="description" id="description" placeholder="description">
+                </div>
+                <div class="formSearch__info--checkIn formSearch__info--items">
+                    <label for="checkin">Check-In</label>
+                    <input type="date" name="checkin" id="checkin">
+                </div>
+                <div class="formSearch__info--checkOut formSearch__info--items">
+                    <label for="checkout">Check-Out</label>
+                    <input type="date" name="checkout" id="checkout">
+                </div>
+                <div class="formSearch__info--guests formSearch__info--items">
+                    <label for="guests">Guests</label>
+                    <input type="number" name="" id="guests" value="1">
+                </div>
+                <div class="formSearch__info--send formSearch__info--items">
+                    <input type="button" value="Search">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>
+            @2023 Hotel Search
+        </p>
+    </footer>
+</body>
+</html>

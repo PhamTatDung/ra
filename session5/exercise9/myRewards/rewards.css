@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fafafb;
+}
+header{
+    width: 1000px;
+    height: auto;
+    margin: auto;
+}
+header .header__nav--top ul{
+    display: flex;
+}
+header .header__nav--top ul li{
+    list-style-type: none;
+    margin-top: 30px;
+} 
+header .header__nav--top ul li:nth-child(2){
+    border-right: 1px solid #333;
+}
+header .header__nav--top ul li a{
+    padding: 0px 8px ;
+    color: #333;
+    text-decoration: none;
+    font-size: 12px;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+header .header__nav--top ul li a:nth-child(1) i{
+    font-size: 10px;
+    line-height: 12px;
+}
+header .heading{
+    margin-top: 25px;
+}
+.navigation{
+    width: 1000px;
+    margin: auto;
+    margin-top: 20px;
+}
+.navigation ul{
+    display: flex; 
+}
+.navigation ul li{
+    list-style-type: none;
+    padding-left: 40px;
+}
+.navigation ul li a{
+    text-decoration: none;
+    color: #333;
+    height: auto;
+    padding: 10px 0px;
+    
+}
+.navigation ul li:nth-child(1) a{
+    border-bottom: 5px solid #4a00eb;
+}
+main{
+    width: 1000px;
+    height: auto;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 28px 0px;
+    margin-top: 24px;
+}
+.elite{
+    display: flex;
+    justify-content: center;
+    column-gap: 35px;
+}
+.elite__points{
+    /* border: 1px solid #fafafb;
+    box-shadow: 0px 0px 0px 5px #fafafb;
+    width: 124px;
+    height: 40px; */
+}
+.elite__status p:nth-child(1){
+    font-weight: bold;
+    font-size: 20px;
+}
+.elite__status{
+    text-align: center;
+}
+.elite__status p:nth-child(2), .elite__points p:nth-child(2){
+    font-size: 12px;
+    margin-top: 8px;
+}
+.paragrap{
+    margin-top: 30px;
+}
+.paragrap p{
+    font-size: 12px;
+    text-align: center;
+}
+.points__info{
+    display: flex;
+    justify-content: center;
+    column-gap: 35px;
+}
+.points__info__items{
+    width: 124px;
+    height: 75px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 46px 0px;
+}
+.points__info__items p{
+    color: #fff;
+    text-align: center;
+}
+.bg__color--blue{
+    background-color: #4a00eb;
+}
+.bg__color--orange{
+    background-color: #ff8a49;
+}
+.bg__color--green{
+    background-color: #00d17a;
+}

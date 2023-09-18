@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account Form</title>
+</head>
+<body>
+    <form action="" method="post" name="createAcount" style="width: 605px; margin: auto; border: 1px solid; padding: 10px; box-shadow: 0px 4px 4px 0px #888888">
+       <header>
+        <h3> Create Acount</h3> 
+       </header>
+        <main>
+            <fieldset>
+                <legend>Registration information</legend>
+                <label for="firstName"><b>First Name<sup>*</sup>:</b></label>
+                <input type="text" id="firstName">
+                <label for="lastName"><b>Last Name:</b></label>
+                <input type="text" id="lastName">
+                <br>
+                <label for="email"><b>Email<sup>*</sup>:</b></label>
+                <input type="text" id="email">
+                <label for="phone"><b>Phone<sup>*</sup>:</b></label>
+                <input type="text" id="phone">
+                <br>
+                <label for="pass"><b>Password<sup>*</sup>:</b></label>
+                <input type="password" id="pass">
+                <label for="confirmPass"><b>Confirm Password<sup>*</sup>:</b></label>
+                <input type="password" id="confirmPass">
+            </fieldset>
+            <fieldset>
+                <legend>Personal information</legend>
+                <label for="gender"><b>Gender:</b></label>
+                <input type="radio" name="gender" id="" checked>
+                <span>Male</span>
+                <input type="radio" name="gender" id="">
+                <span>Female</span>
+                <label for="hobbies"><b>Hobbies:</b></label>
+                <input type="checkbox" name="" id=""><span>Music</span>
+                <input type="checkbox" name="" id=""><span>Sports</span>
+                <input type="checkbox" name="" id=""><span>Travel</span>
+                <input type="checkbox" name="" id=""><span>Movies</span><br>
+              <label for="hobbies"><b>Source of Income:</b></label>
+              <select name="" id="">
+                <option value="">Employed</option>
+                <option value="">Employed</option>
+                <option value="">Employed</option>
+              </select>
+              <label for=""><b>Income:</b></label>
+              <input type="range" name="" id=""><br>
+              <label for=""><b>Age:</b></label>
+              <input type="number" name="" id="" value="18">
+              <label for=""><b>Profile picture:</b></label>
+              <input type="file" name="" id="">
+              <label for=""><b>Birthday:</b></label>
+              <input type="date" name="" id="">
+              <label for=""><b>Adress:</b></label>
+              <input type="text" name="" id=""><br>
+              <label for=""><b>Bio:</b></label>
+              <textarea name="" id="" cols="30" rows="10" style="margin-top: 10px; width: 400px; height: 100px;"></textarea>
+            </fieldset>
+        </main>
+       <footer style="margin-top: 10px;">
+        <input type="button" value="Create">
+        <input type="reset" value="Reset">
+       </footer>
+    </form>
+</body>
+</html>

@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f5f5f5;
+}
+.recruitmentForm{
+    width: 800px;
+    height: auto;
+    margin: 80px auto;
+}
+.recruitmentForm--heading{
+    text-align: center;
+    padding: 20px 0px;
+    margin-top: 10px;
+    font-size: 64px;
+}
+.recruitmentForm form{
+    padding: 12px 24px;
+    background-color: #fff;
+    border: 1px solid #e3e3e3;
+    border-radius: 2px;
+    box-shadow: 0px 0px 20px 1px #e3e3e3
+}
+.recruitmentForm__items{
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+}
+.recruitmentForm__items input{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #e3e3e3;
+    border-radius: 3px;
+    /* margin-top: 8px; */
+    font-size: 18px;
+    color: #8a98af;
+}
+.recruitmentForm__items label{
+    font-size: 18px;
+    color: #8a98af;
+    margin-bottom: 8px;
+}
+.recruitmentForm--cv input{
+    border: none;
+    cursor: pointer;
+}
+.recruitmentForm--send input{
+    background-color: #333;
+    color: #fff;
+    width: 100px;
+    height: 56px; 
+    border-radius: 3px;
+    cursor: pointer;
+}

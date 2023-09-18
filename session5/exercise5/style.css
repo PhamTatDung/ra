@@ -1,0 +1,20 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+.blog{
+    width: 900px;
+    margin: 80px auto;
+    background-color: #fcfaf6;
+    color: 828180;
+    padding: 16px;
+}
+.blog h2{
+    margin: 10px 0px;
+}
+.blog p{
+    padding-bottom: 12px;
+    text-align: left;
+}

@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 1200px;
+    height: auto;
+    margin: 80px auto;
+}
+
+main figure img{
+    display: block;
+    width: 190px;
+    height: 50px;
+    margin: 0 auto;
+}
+.heading h1{
+    text-align: center;
+    margin: 20px 0px;
+}
+.heading h1 strong{
+    color: #00aeef;
+}
+.paragrap p{
+    text-align: center;
+}
+.button{
+    display: flex;
+    margin-top: 30px;
+    column-gap: 30px;
+    justify-content: center;
+}
+.button input{
+    min-width: 190px;
+    height: 50px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+}
