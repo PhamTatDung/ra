@@ -1,0 +1,23 @@
+button{
+    display: block;
+    padding: 10px;
+}
+.popup{
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    background-color: aqua;
+    top: 100px;
+    left: 30%;
+    display: none;
+}
+span{
+    position: absolute;
+    right: 0px;
+    padding: 10px;
+    font-size: 30px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+
+}
