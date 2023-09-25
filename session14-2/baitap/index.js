@@ -4,7 +4,7 @@ feedBack = () => {
     let deleteBtn = document.querySelectorAll(".list__delete");
     let chooseBtn;
     for (let i = 0; i < scoreBtn.length; i++) {
-        scoreBtn[i].addEventListener("click", () => {
+        scoreBtn[i].addEventListener("click", (event) => {
             chooseBtn = event.target;
             for (let j = 0; j < scoreBtn.length; j++) {
                 scoreBtn[j].style.backgroundColor = "#dedcdc7a";
@@ -41,39 +41,37 @@ feedBack();
 deleteFeedBack = () => {
     deleteBtn = document.querySelectorAll(".list__delete");
     for (let i = 0; i < deleteBtn.length; i++) {
-        deleteBtn[i].addEventListener("click", () => {
+        deleteBtn[i].addEventListener("click", (event) => {
             event.target.parentNode.parentNode.remove();
         })
 
     }
 }
 
-// editFeedback = () => {
-//     let btnEdit = document.querySelectorAll(".list__edit");
-//     let textaria;
-
-//     for (let i = 0; i < btnEdit.length; i++) {
-//         textaria = btnEdit[i].querySelector(".edit");
-//         btnEdit[i].addEventListener("click", () => {
-//             for (let j = 0; j < btnEdit.length; j++) {
-//                 textaria.style.display = "none";
-//             }
-//             textaria = btnEdit[i].querySelector(".edit");
-//             textaria.style.display = "block";
-//             let nodeTaget = event.target.parentNode.parentNode;
-//             let cmt = nodeTaget.querySelector(".list__comment p");
-//             document.addEventListener("keypress", (event) => {
-//                 if (event.keyCode == 13) {
-//                     let textValue = textaria.value;
-//                     cmt.innerHTML = textValue;
-//                     textaria.style.display = "none";
-//                     // nodeTaget.querySelector(".edit").value = "";
-//                 }
-//             })
-//         })
 
 
+editFeedback = () =>{
+    let btnEdit = document.querySelectorAll(".list__edit");
+    for (let i = 0; i < btnEdit.length; i++) {
+        btnEdit[i].addEventListener("click", (event)=>{
+            event.target.parentNode.parentNode.querySelector(".edit").style.display = "block";
+            for (let j = 0; j < btnEdit.length; j++) {
+                btnEdit[j].querySelector(".edit").style.display = "none";
+            }
+            event.target.parentNode.parentNode.querySelector(".edit").style.display = "block";
+           event.target.parentNode.querySelector("textarea").addEventListener("keypress",(event, keyCode)=>{
+                if(event.keyCode == 13){
+                    console.log(event.target.parentNode.parentNode.querySelector(".list__comment p"));
+                    event.target.parentNode.parentNode.querySelector(".list__comment p").innerHTML = event.target.value;
+                    event.target.style.display = "none";
+                }
+            })
+          })
+       
+       
+       
+    }
+}
 
-//     }
-// }
+
 
