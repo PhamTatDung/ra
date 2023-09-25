@@ -1,5 +1,4 @@
 addEventListener("DOMContentLoaded", (event) => {
-    //mảng lưu ảnh
     let images = ["images/img1.jpg",
         "images/img2.jpg",
         "images/img3.jpg",
@@ -10,15 +9,12 @@ addEventListener("DOMContentLoaded", (event) => {
         "images/img8.jpg",
         "images/img9.jpg"
     ]
-
-
     let slideList = document.querySelector(".slide__list");
     let slideItems = document.querySelectorAll(".slide__item");
     let index = 0;
     let slideShow = document.querySelector(".slideShow");
     let preBtn = document.querySelector(".arrow--pre");
     let nextBtn = document.querySelector(".arrow--next");
-
    cloneNodes = (arr) =>{
         for (let i = 0; i < arr.length; i++) {
             let slideItem = slideItems[0].cloneNode(true);
@@ -28,7 +24,6 @@ addEventListener("DOMContentLoaded", (event) => {
         slideItems[0].remove();
     }
     cloneNodes(images)
-
     show = (arr) => {
         for (let i = 0; i < arr.length; i++) {
             slideItems = document.querySelectorAll(".slide__item");
@@ -39,8 +34,6 @@ addEventListener("DOMContentLoaded", (event) => {
 
     }
     show(images);
-
-
     preBtn.addEventListener("click", () => {
         --index;
         if (index<0) {
@@ -55,7 +48,6 @@ addEventListener("DOMContentLoaded", (event) => {
             slideShow.style.animation = ``;
         });
     });
-
    nextBtn.addEventListener("click", () => {
         ++index;
         if (index > 3) {
@@ -71,7 +63,6 @@ addEventListener("DOMContentLoaded", (event) => {
         });
     });
     let selection = () => {
-        // slideItems = document.querySelectorAll(".slide__item");
         for (let i = 0; i < slideItems.length; i++) {
             slideItems[i].addEventListener("click", () => {
                 index = i;
